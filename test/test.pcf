@@ -1,0 +1,29 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Nov 10 16:58:40 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "mode_display" LOCATE = SITE "N4" LEVEL 1;
+COMP "result<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "result<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "result<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "result<3>" LOCATE = SITE "L14" LEVEL 1;
+COMP "result<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "result<5>" LOCATE = SITE "D4" LEVEL 1;
+COMP "result<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "result<7>" LOCATE = SITE "N12" LEVEL 1;
+COMP "mode_input_num1" LOCATE = SITE "P4" LEVEL 1;
+COMP "mode_input_num2" LOCATE = SITE "F6" LEVEL 1;
+COMP "mode_reset" LOCATE = SITE "P3" LEVEL 1;
+COMP "input_bus<0>" LOCATE = SITE "A10" LEVEL 1;
+COMP "input_bus<1>" LOCATE = SITE "D14" LEVEL 1;
+COMP "input_bus<2>" LOCATE = SITE "C14" LEVEL 1;
+COMP "input_bus<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "input_bus<4>" LOCATE = SITE "P12" LEVEL 1;
+COMP "input_bus<5>" LOCATE = SITE "R5" LEVEL 1;
+COMP "input_bus<6>" LOCATE = SITE "T5" LEVEL 1;
+COMP "input_bus<7>" LOCATE = SITE "E4" LEVEL 1;
+COMP "clock" LOCATE = SITE "L15" LEVEL 1;
+COMP "mode_compute" LOCATE = SITE "F5" LEVEL 1;
+SCHEMATIC END;
+

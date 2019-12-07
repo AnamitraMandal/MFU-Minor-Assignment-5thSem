@@ -1,0 +1,91 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/NewFolder/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/NewFolder/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/NewFolder/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/test/pa.fromNetlist.tcl
+# create_project -name test -dir "E:/test/planAhead_run_1" -part xc6slx45csg324-3
+create_project: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 409.078 ; gain = 58.816
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "E:/test/test.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {E:/test} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "test.ucf" [current_fileset -constrset]
+Adding file 'E:/test/test.ucf' to fileset 'constrs_1'
+# add_files [list {test.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx45csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design test.ngc ...
+WARNING:NetListWriters:298 - No output is written to test.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file test.edif ...
+ngc2edif: Total memory usage is 4310452 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/test.data/cache/test_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/test.data/cache/test_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from E:/NewFolder/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+Loading clock buffers from E:/NewFolder/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+Loading package pin functions from E:/NewFolder/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/NewFolder/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/csg324/Package.xml
+Loading io standards from E:/NewFolder/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/NewFolder/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/NewFolder/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [E:/test/test.ucf]
+Finished Parsing UCF File [E:/test/test.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 35f5114a
+link_design: Time (s): elapsed = 00:00:33 . Memory (MB): peak = 619.082 ; gain = 206.141
+startgroup
+set_property package_pin E4 [get_ports a]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports b]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports btn]
+endgroup
+startgroup
+set_property package_pin N12 [get_ports c]
+endgroup
+save_constraints
+set_property iostandard LVCMOS25 [get_ports [list c]]
+save_constraints
+Java HotSpot(TM) 64-Bit Server VM warning: Attempt to allocate stack guard pages failed.
+Java HotSpot(TM) 64-Bit Server VM warning: Attempt to unguard stack red zone failed.
+An unrecoverable stack overflow has occurred.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_STACK_OVERFLOW (0xc00000fd) at pc=0x0000000070a1dad7, pid=10080, tid=11324
+#
+# JRE version: 7.0_17-b02
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.7-b01 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# V  [jvm.dll+0x1adad7]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# An error report file with more information is saved as:
+# E:\test\hs_err_pid10080.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
